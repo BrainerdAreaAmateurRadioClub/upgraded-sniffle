@@ -1,5 +1,14 @@
 # upgraded-sniffle
 
+### Hardware
+```
+Yaesu DR-1X 144/430 Dual Band C4FM/FM Digital Repeater      http://tinyurl.com/pecuz6y   $1679.95
+NW Digital Radio Universal Digital Radio Controller II      http://tinyurl.com/k652ynm   $  89.95
+CanaKit Raspberry Pi 3 with 2.5A Micro USB Power Supply     https://tinyurl.com/hmko6eg  $  41.99
+SanDisk Ultra 32GB microSDHC UHS-I Card with Adapter        https://tinyurl.com/zgjctvq  $  12.94
+```
+
+
 ## https://github.com/wb2osz/direwolf
 
 
