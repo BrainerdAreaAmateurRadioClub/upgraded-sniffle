@@ -13,3 +13,22 @@ Compass Linux Operating System                              https://tinyurl.com/
 WB2OSZ Direwolf Soundcard Modem/TNC                         https://tinyurl.com/nkoqfn6
 Linux RMS Gateway                                           https://tinyurl.com/ny7s9nk
 ```
+##### Build / Install Direwolf Software
+```
+cd /home/pi/Desktop/                                                &&
+git clone https://www.github.com/wb2osz/direwolf                    &&
+mkdir /home/pi/Desktop/direwolf/build                               &&
+cd /home/pi/Desktop/direwolf/build                                  &&
+
+
+mkdir /home/pi/aprswx/                                              &&
+cd /home/pi/aprswx/                                                 &&
+git clone git://git.osmocom.org/rtl-sdr.git                         &&
+mkdir /home/pi/aprswx/rtl-sdr/build/                                &&
+cd /home/pi/aprswx/rtl-sdr/build/                                   &&
+cmake ../ -DINSTALL_UDEV_RULES=ON                                   &&
+make                                                                &&
+sudo make install                                                   &&
+sudo ldconfig                                                       &&
+cd /home/pi/
+```
