@@ -15,30 +15,17 @@ Linux RMS Gateway                                           https://tinyurl.com/
 ```
 ##### Build / Install Direwolf Software
 ```
-sudo apt-get install gpsd                                           &&
-sudo apt-get install libasound2-dev                                 &&
-sudo apt-get install libgps-dev                                     
+sudo apt-get -y install gpsd                                        &&
+sudo apt-get -y install libasound2-dev                              &&
+sudo apt-get -y install libgps-dev                                  &&
+sudo apt-get -y install numlockx
 ```
 ##### Build / Install Direwolf Software
 ```
 cd /home/pi/Desktop/                                                &&
 git clone https://www.github.com/wb2osz/direwolf                    &&
-make
-sudo make install
-
-
-mkdir /home/pi/Desktop/direwolf/build                               &&
-cd /home/pi/Desktop/direwolf/build                                  &&
-
-
-mkdir /home/pi/aprswx/                                              &&
-cd /home/pi/aprswx/                                                 &&
-git clone git://git.osmocom.org/rtl-sdr.git                         &&
-mkdir /home/pi/aprswx/rtl-sdr/build/                                &&
-cd /home/pi/aprswx/rtl-sdr/build/                                   &&
-cmake ../ -DINSTALL_UDEV_RULES=ON                                   &&
+cd /home/pi/Desktop/direwolf                                        &&
 make                                                                &&
 sudo make install                                                   &&
-sudo ldconfig                                                       &&
-cd /home/pi/
+make install-conf
 ```
