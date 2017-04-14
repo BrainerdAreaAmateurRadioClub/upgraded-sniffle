@@ -15,8 +15,18 @@ Linux RMS Gateway                                           https://tinyurl.com/
 ```
 ##### Build / Install Direwolf Software
 ```
+sudo apt-get install gpsd                                           &&
+sudo apt-get install libasound2-dev                                 &&
+sudo apt-get install libgps-dev                                     
+```
+##### Build / Install Direwolf Software
+```
 cd /home/pi/Desktop/                                                &&
 git clone https://www.github.com/wb2osz/direwolf                    &&
+make
+sudo make install
+
+
 mkdir /home/pi/Desktop/direwolf/build                               &&
 cd /home/pi/Desktop/direwolf/build                                  &&
 
