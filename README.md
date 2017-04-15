@@ -13,6 +13,13 @@ Compass Linux Operating System                              https://tinyurl.com/
 WB2OSZ Direwolf Soundcard Modem/TNC                         https://tinyurl.com/nkoqfn6
 Linux RMS Gateway                                           https://tinyurl.com/ny7s9nk
 ```
+##### Create User 'rmsgateway'
+```
+sudo useradd -m -G adm,audio,cdrom,dialout,games,gpio,i2c,input,netdev,plugdev,spi,sudo,users,video rmsgateway
+sudo passwd rmsgateway
+Enter new UNIX password: winlink
+Retype new UNIX password: winlink
+```
 ##### Build / Install Direwolf Software
 ```
 sudo apt-get -y install gpsd                                        &&
