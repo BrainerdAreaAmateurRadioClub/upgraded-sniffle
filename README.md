@@ -13,12 +13,21 @@ Compass Linux Operating System                              https://tinyurl.com/
 WB2OSZ Direwolf Soundcard Modem/TNC                         https://tinyurl.com/nkoqfn6
 Linux RMS Gateway                                           https://tinyurl.com/ny7s9nk
 ```
-##### Create User 'rmsgateway'
+##### Update Compass Image and Install Packages
 ```
-sudo useradd -m -G adm,audio,cdrom,dialout,games,gpio,i2c,input,netdev,plugdev,spi,sudo,users,video rmsgateway
-sudo passwd rmsgateway
-Enter new UNIX password: winlink
-Retype new UNIX password: winlink
+sudo su
+apt-get update
+apt-get upgrade -y
+apt-get install -y mg jed rsync build-essential autoconf automake libtool git libasound2-dev whois libncurses5-dev
+shutdown -r now
+```
+##### Install Core Configuration
+```
+git clone https://github.com/nwdigitalradio/n7nix
+cd n7nix/config
+sudo su
+./core_install.sh
+shutdown -r now
 ```
 ##### Build / Install Direwolf Software
 ```
