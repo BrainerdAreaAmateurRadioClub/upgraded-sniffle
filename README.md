@@ -29,19 +29,11 @@ sudo su
 ./core_install.sh
 shutdown -r now
 ```
-##### Build / Install Direwolf Software
+##### Linux RMS Gateway
 ```
-sudo apt-get -y install gpsd                                        &&
-sudo apt-get -y install libasound2-dev                              &&
-sudo apt-get -y install libgps-dev                                  &&
-sudo apt-get -y install numlockx
-```
-##### Build / Install Direwolf Software
-```
-cd /home/pi/Desktop/                                                &&
-git clone https://www.github.com/wb2osz/direwolf                    &&
-cd /home/pi/Desktop/direwolf                                        &&
-make                                                                &&
-sudo make install                                                   &&
-make install-conf
+cd n7nix/config
+# should now be in ~/n7nix/config
+# become root
+sudo su
+./app_install.sh rmsgw
 ```
